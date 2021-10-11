@@ -35,6 +35,7 @@ var menustate = {
         console.log("starting game")
         game.state.start('gamestate')
         music = game.add.audio('menuMusic');
+        music.loop = true;
         music.play();
         
     },
