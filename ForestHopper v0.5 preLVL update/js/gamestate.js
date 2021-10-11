@@ -7,7 +7,8 @@ var gamestate={
 preload:function() {
 
     game.load.image('ground', 'assets/floor.png');
-    game.load.image('platform', 'assets/platformlevel1.png')
+    game.load.image('platform', 'assets/platformlevel1.png');
+    game.load.image('platformbg', 'assets/platformlevel1bg.png');
     game.load.image('bg1', 'assets/level1.png');
     //game.load.spritesheet('player', 'assets/spritesheet.png', 96, 84);
     game.load.spritesheet('player', 'assets/bunnywork.png', 46, 90, 59);
@@ -40,6 +41,9 @@ create: function(){
     this.keyboard = game.input.keyboard;
 
     game.add.sprite(0, 0, 'bg1');
+    game.add.sprite(800,150, 'platformbg');
+    game.add.sprite(400,320, 'platformbg');
+    game.add.sprite(10,100, 'platformbg');
     platforms = game.add.group();
     platforms.enableBody = true;
     var ground = platforms.create(0, game.world.height - 64, 'ground');
