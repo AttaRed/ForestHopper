@@ -26,12 +26,10 @@ var menustate = {
     },
     
     play: function(){
-        game.state.start('overworldstate');
-//        console.log("starting tutorial")
-//        game.state.start('tutorialstate');
-//        music = game.add.audio('menuMusic');
-//        music.loop = true;
-//        music.play();
+        game.state.start('tutorialstate');
+        music = game.add.audio('menuMusic');
+        music.loop = true;
+        music.play();
         
     },
     

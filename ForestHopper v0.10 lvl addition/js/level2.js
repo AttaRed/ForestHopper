@@ -335,5 +335,9 @@ update: function(){
 
     }
     
+    if (score == 4) {
+        game.state.start('overworldstate');
+    }
+    
 }
 }

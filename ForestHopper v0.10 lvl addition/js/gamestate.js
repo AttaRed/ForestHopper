@@ -392,7 +392,7 @@ update: function(){
 
     }
     
-    if (score == 9) {
+    if (score == 4) {
         game.state.start('overworldstate');
     }
     

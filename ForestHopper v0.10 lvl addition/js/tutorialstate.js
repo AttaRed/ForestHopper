@@ -22,7 +22,7 @@ var tutorialstate = {
     },
     
     play: function(){
-        game.state.start('gamestate');
+        game.state.start('overworldstate');
 }
 
 }

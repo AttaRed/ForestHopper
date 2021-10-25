@@ -443,11 +443,11 @@ var overworldstate = {
     
     play: function(){
         if (xTrack == 0 && yTrack == 0){
-            console.log("starting tutorial")
-            game.state.start('tutorialstate');
-            music = game.add.audio('menuMusic');
-            music.loop = true;
-            music.play();
+            console.log("starting gamestate")
+            game.state.start('gamestate');
+            //music = game.add.audio('menuMusic');
+            //music.loop = true;
+            //music.play();
         };
         if (xTrack == -2 && yTrack == 1){
             console.log("starting dark forest")
@@ -465,7 +465,13 @@ var overworldstate = {
             //
             //music.play();
         };
+        
+        if (xTrack == 1 && yTrack == -1) {
+            console.log("starting level2");
+            game.state.start('level2');
+        };
     },
+    
     
     
         //mushroomEnemy.animations.play('idle');   
