@@ -11,6 +11,8 @@ game.state.add('tutorialstate', tutorialstate);
 
 game.state.add('level1', level1);
 
+game.state.add('level2', level2);
+
 game.state.add('overworldstate', overworldstate);
 
 game.state.add('level1Boss', level1Boss);
